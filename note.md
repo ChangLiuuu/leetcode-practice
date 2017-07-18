@@ -43,7 +43,7 @@
 3. nums1的指针若先结束，则会出现一个问题，就是开头是重复的，所以要将未用完的nums2复制到num1开头
 
 
-### 118. Pascal's Triangle
+### 118. Pascal's Triangle I
 * 给一个数例如5 ，输入 
 [
      [1],
@@ -58,3 +58,8 @@
 1. 掌握 add(index, ele) 和 set(index, ele) 用法
 2. 杜绝错误：改变当前元素index错了使循环变量发生了变化比如 1 2 1 -> 1 3 1-> 1 3 4 1
 3. 所以，一般循环迭代时候考虑从后想前迭代。
+
+### 119. Pascal's Triangle II
+* 给一个rowIndex k return 第k行的数组 例如3 return [1,3,3,1]
+
+1. 陷阱就是k的取值，是从0开始的！不是从1. 与118不同！
