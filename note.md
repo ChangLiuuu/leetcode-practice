@@ -20,10 +20,7 @@
 2. 优化: 如果front++之后，front != end  再填上nums[end]. 减少了一部分操作。
 3. 最后返回长度 front + 1; front相当于新数组的末尾了。
 4. 区分nums[i++] 和 arr = nums[++i]  (i = i + 1; arr = nums[i])
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 
 ### 66. Plus One
 * 数组代表一个整数A各位的digits，返回一个新数组，数组为整数A + 1后各位的digits.
@@ -32,15 +29,6 @@
 1. 记住整数加一的思想，同理比如加二呢。
 2. 最后需要新建数组，新建数组方法别忘了‘new’。  int[] arr = new int[n + 1];
 3. for循环的i 习惯写i++了 从大到小写时候，记住i--，杜绝弱智行为。
-<<<<<<< HEAD
-=======
-
-
-
-
->>>>>>> origin/master
-
-
 
 	
 
