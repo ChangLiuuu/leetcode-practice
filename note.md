@@ -118,3 +118,14 @@
 ### 448. Find All Numbers Disappeared in an Array
 * 同442，不过找的找出的是消失的元素，返回ArrayList。 保证哦恩复杂度无额外空间。
 * 负号标记大法。 遍历两次，第二次找出元素还大于零的数，对应下标加一就是原数组消失的元素了。 
+
+## 7.21
+
+### 581. Shortest Unsorted Continuous Subarray
+* 递增序列找最短乱序M 使M排好后整个序列就递增了 返回M长度
+* 乾坤挪移奇迹大法。 max开头，min最后，两个指针start end。end说起： 如果 开头后面的数比max还大，max更新没毛病，因为本来就是递增的；如果max不更新了，就出问题了，说明变小趋势，end该向后移动了
+同理 start.
+
+1. 这个方法真的无解。直观方法就是先排好序，然后two pointer 首位比较。但排序时间复杂度nlogn 没这个 O(n)的牛逼。
+2. 技巧点在于 找max从开头找，找min从尾巴向前找。
+3. 还有一点厉害之处，设置 start = -1 end = -2 这样, end - start + 1  
