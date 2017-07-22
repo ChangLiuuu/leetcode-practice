@@ -128,4 +128,14 @@
 
 1. 这个方法真的无解。直观方法就是先排好序，然后two pointer 首位比较。但排序时间复杂度nlogn 没这个 O(n)的牛逼。
 2. 技巧点在于 找max从开头找，找min从尾巴向前找。
-3. 还有一点厉害之处，设置 start = -1 end = -2 这样, end - start + 1  
+3. 还有一点厉害之处，设置 start = -1 end = -2 这样, end - start + 1  避免edge case 检验
+
+### 566. Reshape the Maxtrix
+* 二维数组变型，比如4 * 1 变成 2 * 2形式。给出r c 和 nums[][] 如果能变 返回新的res[r][c]，如果不能返回原数组。
+* 遍历原矩阵，设置新矩阵的row 和 col 自加。如果col == c row++ col = 0 方法二 遍历原矩阵index, index / c 为行 index % c 为列 nums行 index / nums[0].length 列： %
+
+1. 记住数组常用方法，取col的商得行数，取col得余数得列数。
+
+
+
+
