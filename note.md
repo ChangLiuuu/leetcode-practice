@@ -12,7 +12,7 @@
 2. for 循环里是 i += 2; 不是 i + 2;
 
 
-### 6. Remove Depulicates from Sorted Array
+### 26. Remove Depulicates from Sorted Array
 * 不分配额外空间，使老数组的前x项不重复作为新数组，不用管x项之后的长度，返回新数组长度。
 * 用two pointers。end负责移动每次与front比较, front记录不重复的. 当nums[front]和nums[end]不相等时，front先向后移在该位置填上nums[end]（可优化）.
 
@@ -36,9 +36,9 @@
 
 ### 88. Merge Sorted Array
 * 两个数组，要求将nums2并到nums1中，两个数组中的数初始长度m和n，nums1的长度足够（大于等于m + n）无返回值。
-* 利用3个pointer记录3个index，在已知长度的情况下，从后向前比较，如果从前向后会覆盖掉还未比较的nums1元素。 
+* 利用3个pointer记录3个index，在已知长度的情况下，从m+n-1向前比较，避免覆盖元素。 
 
-1. 写法上trick  i > -1 代替 i >= 0 操作少一个等号 速度相对快点
+1. 写法上trick  while(i > -1) 不是  i > 0
 2. 熟练三目运算符与i--配合  nums1[k--] = (nums1[i] > nums2[j] ? nums1[i--] : nums2[j--])
 3. nums1的指针若先结束，则会出现一个问题，就是开头是重复的，所以要将未用完的nums2复制到num1开头
 
@@ -55,9 +55,10 @@
 
 * 将数组对齐进行推理。首先要看出来有两层循环，外层add（row）,内层构建row。构建内层row时，长度首先是和上一个数组长度是一样的，通过变化后，head增加元素1既row(0, 1) 然后 add(row)即可.
 
-1. 掌握 add(index, ele) 和 set(index, ele) 用法
+1. 掌握 add(index, ele) 和 set(index, ele) 用法(replace的作用)
 2. 杜绝错误：改变当前元素index错了使循环变量发生了变化比如 1 2 1 -> 1 3 1-> 1 3 4 1
 3. 所以，一般循环迭代时候考虑从后想前迭代。
+4. res.add(new ArrayList<Integer>(row))    (row)的格式就是new的格式
 
 ### 119. Pascal's Triangle II
 * 给一个rowIndex k return 第k行的数组 例如3 return [1,3,3,1]
@@ -160,4 +161,4 @@
 3. hashmap JAVA8新方法： map.getOrDefault() :  map.put(m, map.getOrDefault(m, 0) + 1)  如果对应k没有value 设默认值。
 
 ## 7.23
-
+复习，修改笔记。
