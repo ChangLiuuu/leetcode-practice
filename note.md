@@ -151,3 +151,10 @@
 1. 重点在于最后类型的强制转换，一个int数乘以1.0得到double型
 2. 注意下标是0到k-1 之后是从k开始进一个出一个
 
+### 532. K-diff Pairs in an Array
+* 整型数组range[-1e7, 1e7]，给一个差值k，找出数组中元素差值为k的对儿数，返回pairs数。
+* hashmap。key记录ele value记录ele的频率 若k==0 找频率大于1的,count++, else if map.countsKey(entry.getKey() + k), count++.
+
+1. edge case: 这题需要考虑k<0和nums.length<2
+2. 学会了map的遍历：for(Map.Entry<Integer,Integer> entry : map.entrySet()){}
+3. hashmap JAVA8新方法： map.getOrDefault() :  map.put(m, map.getOrDefault(m, 0) + 1)  如果对应k没有value 设默认值。
