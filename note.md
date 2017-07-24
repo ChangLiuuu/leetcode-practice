@@ -136,7 +136,7 @@
 
 1. 记住数组常用方法，取col的商得行数，取col得余数得列数。
 
-7.22
+## 7.22
 
 ### 628. Maximum Product of Three Numbers
 * 给一个数组范围[-1000, 1000] 个数[3, 10^4] 找出三个数乘积最大，返回这个乘积。
@@ -158,3 +158,6 @@
 1. edge case: 这题需要考虑k<0和nums.length<2
 2. 学会了map的遍历：for(Map.Entry<Integer,Integer> entry : map.entrySet()){}
 3. hashmap JAVA8新方法： map.getOrDefault() :  map.put(m, map.getOrDefault(m, 0) + 1)  如果对应k没有value 设默认值。
+
+## 7.23
+
