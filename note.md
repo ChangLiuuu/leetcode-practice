@@ -162,3 +162,17 @@
 
 ## 7.23
 复习，修改笔记。
+
+## 7.24
+
+### 167. Two Sum II - Input array is sorted
+* sorted数组，给一个target，返回数组[]{index1, index2} 其中index1 < index2
+* two pointers 首尾向中间移动
+
+1. edge case： 长度小于2
+2. 空数组 new int[2]；
+3. 初始化数组 new int[]{left + 1, right + 1} 或 int[2]   这道题index从1开始的所以left right 要加一
+
+
+
+
