@@ -173,6 +173,10 @@
 2. 空数组 new int[2]；
 3. 初始化数组 new int[]{left + 1, right + 1} 或 int[2]   这道题index从1开始的所以left right 要加一
 
+### 27 Remove Element
+* 给nums[] 和 val , 去掉nums里ele=val的 返回长度
+* two pointers 前面check 后面cur记录
 
-
+1. 最后长度是cur 不是cur + 1 因为是先改变ele再cur++ 最后cur的位置总是数组的位置多一
+2. 优化： 改变ele时候 check一下 nums[cur] != nums[i]
 
