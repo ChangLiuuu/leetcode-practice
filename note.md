@@ -194,10 +194,14 @@
 
 ### 219 Contains Duplicate II
 * 整形数组，在k距离内找到两个元素相等。如果能找到返回true。
-* HashSet思路： 在长度diff为k的hashset里，如果add不进去了，说明找到了。 保证k长度的hashset需要提前remove掉第i - k - 1个，再add第i个
+* HashSet思路： 在长度diff为k的hashset里，如果add不进去了，说明找到了。 保证k长度的hashset需要提前remove掉第i - k - 1个，再add第i个.
 
 1. 领会i - k到哪个index了 0_____k    然后领会 i - k - 1： x 0_____k
 
+
+### 169. Majority Element
+* 一个数组，其中有一个数出现次数大于 n/2 ，返回这个数。
+* 动态规划的思想。c
 
 
 
