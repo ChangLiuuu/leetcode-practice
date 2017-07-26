@@ -73,6 +73,7 @@
 
 1. 难点在于开头和结尾的判断，但一个巧妙的方法避开了edge case，避免数组越界： 假设两个整数 pre 和 next。若为开头则直接设pre=0,否则 pre=nums[i-1] 同理 next.
 2. 三目运算符运用
+3. count++ 完之后 记得种上花，既 flowerbed[i] = 1； 别犯第二次-，-
 
 
 ### 121. Best Time to Buy and Sell Stock
@@ -163,6 +164,7 @@
 ## 7.23
 复习，修改笔记。
 
+
 ## 7.24
 
 ### 167. Two Sum II - Input array is sorted
@@ -179,4 +181,50 @@
 
 1. 最后长度是cur 不是cur + 1 因为是先改变ele再cur++ 最后cur的位置总是数组的位置多一
 2. 优化： 改变ele时候 check一下 nums[cur] != nums[i]
+
+
+## 7.25
+
+### 217. Contains Duplicate
+* 整形数组，有重复元素返回true，没有返回false
+* Hashset time: n, space: n;    先sort再比较相邻  time: nlogn, space 1
+
+1. set先check 再 add. 
+2. 比较相邻注意边界
+
+### 219 Contains Duplicate II
+* 整形数组，在k距离内找到两个元素相等。如果能找到返回true。
+* HashSet思路： 在长度diff为k的hashset里，如果add不进去了，说明找到了。 保证k长度的hashset需要提前remove掉第i - k - 1个，再add第i个
+
+1. 领会i - k到哪个index了 0_____k    然后领会 i - k - 1： x 0_____k
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
