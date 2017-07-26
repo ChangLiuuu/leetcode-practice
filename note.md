@@ -200,28 +200,8 @@
 
 
 ### 169. Majority Element
-* 一个数组，其中有一个数出现次数大于 n/2 ，返回这个数。
-* 动态规划的思想。c
-```
-int count = 1, res = nums[0];
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] != res) {
-                count--;
-                if (count == 0) {
-                    res = nums[i];
-                    count = 1;
-                }
-            } else {
-                count++;
-            }
-        }
-        return res;
-```
-
-
-
-
-
+* 一个数组，其中有一个数出现次数大于 n/2 ，返回这个数。（比存在这样的数）
+* 动态规划的思想。count计数，当count为0时，说明有数抵消掉res了，这时从新开始count = 1 res = n[i]. 总会有一个数的count比其他数大，然后res不变了 或者是刚变 比如1 2 1，最后一个1就是刚变的res。
 
 
 
