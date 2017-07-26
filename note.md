@@ -202,9 +202,21 @@
 ### 169. Majority Element
 * 一个数组，其中有一个数出现次数大于 n/2 ，返回这个数。
 * 动态规划的思想。c
-
-
-
+```
+int count = 1, res = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] != res) {
+                count--;
+                if (count == 0) {
+                    res = nums[i];
+                    count = 1;
+                }
+            } else {
+                count++;
+            }
+        }
+        return res;
+```
 
 
 
