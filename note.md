@@ -208,7 +208,13 @@
 
 ## 7.26
 
-### 
+### Search Insert Position
+* 一个sorted数组 和 一个target 如果ele有 返回index; 如果没有 返回target排序后应该在的index。
+* 二分搜索。 sorted的 有target。重点在于边界的判定。 
+
+1. low + (high - low) / 2 防止变量溢出
+2. while (low <= high) ;   low = mid + 1   high = mid - 1
+3. return low; 
 
 
 
