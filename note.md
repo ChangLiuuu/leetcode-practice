@@ -208,7 +208,7 @@
 
 ## 7.26
 
-### Search Insert Position
+### 35. Search Insert Position
 * 一个sorted数组 和 一个target 如果ele有 返回index; 如果没有 返回target排序后应该在的index。
 * 二分搜索。 sorted的 有target。重点在于边界的判定。 
 
@@ -216,7 +216,13 @@
 2. while (low <= high) ;   low = mid + 1   high = mid - 1
 3. return low; 
 
+### 414. Third Maximum Number
+* 返回数组第三大的数，没有的话返回最大的数。[1,2,2] 返回2（如果元素相同，算并列大）
+* max3 max2 max1 
 
+1. 初始时 Integer max3 = null, 避免max不知道是自己初始化赋值还是比出来的。
+2. for (Integer i : nums)
+3. for循环里面要先判断if(nums[i].equals(max).......) continue;
 
 
 
