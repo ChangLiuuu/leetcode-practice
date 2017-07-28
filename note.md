@@ -244,9 +244,13 @@
 ### 268. Missing Number
 * 有一个0到n的数组，这时候拿走一个数组成新数组nums。返回拿走的那个数。
 * 方法1：O(n) 异或   0 1 2 3 5 6   设 res = 6， res异或i,然后异或nums[i]，相同的两个数异或为0，所以最后得到的数就是4
-*                   0 1 2 3 4 5
+                    0 1 2 3 4 5
 * 最好的方法是Binary search.  O(logn).
 
+
+### 189 Rotate Array
+* 给一个n和k  n代表从1到n的数组， k代表把最后一个元素放最前面 执行k次 比如n=4 k=2 [1 2 3 4] -> [3 4 1 2]
+* 很巧妙。整体reverse一下，然后前k个再reverse，后 n - k个 reverse
 
 
 
