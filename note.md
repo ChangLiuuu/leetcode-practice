@@ -225,7 +225,20 @@
 3. for循环里面要先判断if(nums[i].equals(max).......) continue;
 
 
+## 7.27
 
+### 283. Move Zeroes
+* 一个数组把零都移到后面，没有额外空间。
+* for (n : nums) n != 0  nums[cur++] = n;  while (cur < nums.length) nums[cur++] = 0;
+
+1. for-each的用法, 前面逐个覆盖后面数的时候常用
+
+
+### 485. Max Consecutive Ones
+* 一个Binary数组（只有0,1) 返回最大几个1连续。
+* counter计数。遇到0 counter=0, 遇到1 counter++  用max记录max（max, counter）
+
+1. for-each 立马用上
 
 
 
