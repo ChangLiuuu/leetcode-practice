@@ -248,7 +248,7 @@
 * 最好的方法是Binary search.  O(logn).
 
 
-### 189 Rotate Array
+### 189. Rotate Array
 * 给一个n和k  n代表从1到n的数组， k代表把最后一个元素放最前面 执行k次 比如n=4 k=2 [1 2 3 4] -> [3 4 1 2]
 * 很巧妙。整体reverse一下，然后前k个再reverse，后 n - k个 reverse
 
