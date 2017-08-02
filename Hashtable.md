@@ -6,7 +6,12 @@
 ### 398.
 
 
-### 594.
+### 594. Longest Harmonious Subsequence
+* 一个整数数组， 找出相差为一的所有数来组成新数组。返回这样的数组的最大长度。
+* HashMap记录出现的数和相应的频率。然后遍历key, 如果contains，那么相加频率。取最大。
+
+1. 遍历key 用方法 map.keySet();   即 for (int i : map.keySet()) {}
+2. 遍历value 用方法 map.values();
 
 
 ### 500.
