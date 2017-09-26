@@ -253,6 +253,12 @@
 * 很巧妙。整体reverse一下，然后前k个再reverse，后 n - k个 reverse
 
 
+## 9.1
+### 百度2017笔试 度度熊找子串
+* 例如在串”aaabbaa”中，度度熊想找的子串有”a”,”aa”,”aaa”,”b”,”bb”五种。 输出5
+* hashmap记录各字母最大数。
+
+1. 遍历map for (Map.entry(k, v) entry : map.entrySet()) { sum = entry.getValue() + sum}
 
 
 
